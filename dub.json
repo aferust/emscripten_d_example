@@ -1,0 +1,18 @@
+{
+    "name": "emdman",
+    "license": "BSL-1.0",
+    "dflags-ldc": ["--output-o", "--output-bc",
+        "-betterC",
+        "-mtriple=wasm32-unknown-unknown-wasm"
+    ],
+    "lflags": ["-allow-undefined"],
+    "targetName": "app.bc",
+    "dependencies": {
+        "bindbc-sdl": "*"
+    },
+    "subConfigurations": {
+        "bindbc-sdl": "staticBC"
+    },
+    "versions": ["BindSDL_Image"]
+
+}
